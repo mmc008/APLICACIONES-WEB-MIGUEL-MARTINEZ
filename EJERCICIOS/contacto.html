@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de contacto</title>
+</head>
+<body>
+    <h1>Pagina de Contacto</h1>
+    <hr>
+    <a href="index.html">Pagina Principal</a> <br><br>
+    <img src="img/imagen.png" alt="Imagen de Logo de Davante" height="400px" width="400px" title="Vandelvira"> <br>
+
+<form action="datos.php" method="post">
+
+<form>
+
+<fieldset>
+    <legend>Formulario Datos Personales</legend>
+    <label>Nombre</label>
+     <input type="text" id="Nombre" name="Nombre" placeholder="Ponga aqui su Nombre"> <br>
+    <label>Apellidos</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Escriba aqui su apellido"><br>
+    <label>Edad</label>
+    <input type="number" id="Edad" name="Edad"> <br>
+    <label>Contraseña</label>
+    <input type="password" id="clave" name="clave"> 
+    <br><br>
+</fieldset>
+   
+   
+<fieldset>
+    <legend>Lista Despegable</legend>
+    <select name="lista">
+        <option value="modulo1">Sistemas Operativos en Red</option>
+        <option value="modulo2">Aplicaciones Web</option>
+        <option value="modulo3">Fundamentos de la Programacion</option>   
+      <select>
+    <br><br>
+</fieldset>
+
+
+
+
+
+     <fieldset>
+        <legend>Listado de la compra</legend>
+        <input type="checkbox" id="elemento1" name="elemento1" value="leche">
+        <label for="elemento1"> Caja de leche</label>
+        <input type="checkbox" id="elemento2" name="elemento1" value="Pan">
+        <label for="elemento2"> Barra de Pan</label>
+        <input type="checkbox" id="elemento3" name="elemento1" value="Huevos">
+        <label for="elemento3"> Caja de Huevos</label>
+    </fieldset>
+    <br>
+    <label for="comentario">Comentarios:</label><br>
+    <textarea id="comentario" name="comentario" rows="10" cols="40"></textarea> <br>
+
+    <button type="submit">Enviar </button>
+    <button type="reset"> Borrar</buttom>
+
+
+   </form>
+
+</body>
+</html>
