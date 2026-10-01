@@ -8,7 +8,7 @@
 <body>
     <h1>Pagina de Contacto</h1>
     <hr>
-    <a href="index.html">Pagina Principal</a> <br><br>
+    
     <img src="img/imagen.png" alt="Imagen de Logo de Davante" height="400px" width="400px" title="Vandelvira"> <br>
 
 <form action="datos.php" method="post">
@@ -22,7 +22,7 @@
     <label>Apellidos</label>
     <input type="text" id="apellido" name="apellido" placeholder="Escriba aqui su apellido"><br>
     <label>Edad</label>
-    <input type="number" id="Edad" name="Edad"> <br>
+    <input type="number" id="Edad" name="Edad" min="18"> <br>
     <label>Contraseña</label>
     <input type="password" id="clave" name="clave"> 
     <br><br>
@@ -30,11 +30,17 @@
    
    
 <fieldset>
-    <legend>Lista Despegable</legend>
+    <legend>Provincia</legend>
     <select name="lista">
-        <option value="modulo1">Sistemas Operativos en Red</option>
-        <option value="modulo2">Aplicaciones Web</option>
-        <option value="modulo3">Fundamentos de la Programacion</option>   
+        <option value="modulo1">Jaén</option>
+        <option value="modulo2">Sevilla</option>
+        <option value="modulo3">Cordoba</option>   
+        <option value="modulo4">Granada</option>
+        <option value="modulo5">Malaga</option>
+        <option value="modulo6">Huelva</option>
+        <option value="modulo7">Cadíz</option>
+        <option value="modulo8">Almería</option>
+
       <select>
     <br><br>
 </fieldset>
@@ -44,14 +50,16 @@
 
 
      <fieldset>
-        <legend>Listado de la compra</legend>
-        <input type="checkbox" id="elemento1" name="elemento1" value="leche">
-        <label for="elemento1"> Caja de leche</label>
-        <input type="checkbox" id="elemento2" name="elemento1" value="Pan">
-        <label for="elemento2"> Barra de Pan</label>
-        <input type="checkbox" id="elemento3" name="elemento1" value="Huevos">
-        <label for="elemento3"> Caja de Huevos</label>
+        <legend>Aficiones</legend>
+        <input type="checkbox" id="elemento1" name="elemento1" value="Videojuegos">
+        <label for="elemento1"> Videojuegos</label>
+        <input type="checkbox" id="elemento2" name="elemento1" value= "Musica" checked>
+        <label for="elemento2"> Musica</label>
+        <input type="checkbox" id="elemento3" name="elemento1" value="Arte">
+        <label for="elemento3"> Arte</label>
+        
     </fieldset>
+    <fieldset>
     <br>
     <label for="comentario">Comentarios:</label><br>
     <textarea id="comentario" name="comentario" rows="10" cols="40"></textarea> <br>
@@ -60,7 +68,9 @@
     <button type="reset"> Borrar</buttom>
 
 
-   </form>
-
+    </fieldset>
+<br><br>
+<a href="index.html">Pagina Principal</a>
+  </fieldset>
 </body>
 </html>
